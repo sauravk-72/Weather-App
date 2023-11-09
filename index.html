@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="search">
+        <input type="text" placeholder="Enter your location" class="search-box">
+        <button id="btn" class="fa-solid fa-magnifying-glass"></button>
+      </div>
+    </div>
+    <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/Assets/90.png" alt="404 Error">
+        </div>
+    <div class="weather-body">
+      <img src="Assets/cloud2.png" alt="cloud" class="weather-img">
+      <div class="weather-box">
+        <p class="temprature">0</p>
+        <p class="description">Cloud</p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="text">
+            <span id="humidity">45%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span id="wind-speed">10km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/d6b6c89c5c.js" crossorigin="anonymous"></script>
+  <script type="module" src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
